@@ -21,7 +21,7 @@ class GridViewComponent extends Component {
         {
             this.props.items.map((item, i) =>{
                 return <tr key={i}>
-                        <td>{item.name}</td>
+                        <td>{item.userName}</td>
                         <td><a href="#" onClick={()=>{
                                 this.props.onDelete(item)
                         }}>Delete</a></td>
